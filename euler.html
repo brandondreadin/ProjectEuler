@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Project Euler</title>
+</head>
+<body>
+	<h2>Project Euler</h2>
+	<script src="euler.js"></script>
+	
+	<label for="problem">Problem Number:</label>
+	<input type="text" name="problem" id="problem">
+	<button onclick="showAnswer()">Submit</button>
+	<script>
+		function showAnswer(){
+			var problemNum = document.getElementById("problem").value;
+			document.getElementById("answer").value = problemSet[problemNum];
+		}
+	</script>
+
+	<label for="">Answer:</label>
+	<input type="text" id='answer'>
+</body>
+</html>
